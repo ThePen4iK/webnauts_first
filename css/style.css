@@ -1,1 +1,327 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Semibold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy-Regular.ttf);
+  font-weight: 400;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Gilroy";
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+button {
+  border: 0;
+}
+
+.container {
+  max-width: 1600px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+.header .wrapper-top {
+  background-color: #20242d;
+  padding: 10px 0;
+}
+.header .address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+
+  text-align: left;
+  color: #fff;
+  letter-spacing: 0em;
+}
+.header .contacts {
+  display: flex;
+}
+.header .contacts a {
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  color: #fff;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.header .wrapper-bottom {
+  background-color: #fff;
+  padding-top: 12px;
+  padding-bottom: 11px;
+}
+.header .wrapper-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .navigation li {
+  margin-right: 56px;
+}
+.header .navigation li:last-child {
+  margin-right: 0;
+}
+.header .navigation a {
+  font-weight: 600;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #20242d;
+}
+.header .navigation .active {
+  color: #ff7129;
+}
+.header .navigation .active::before,
+.header .navigation .active::after {
+  content: "";
+}
+.header .wrapper-top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .contacts {
+  display: flex;
+  justify-content: start;
+}
+.header .contacts li {
+  margin-right: 57px;
+}
+.header .contacts li:last-child {
+  margin-right: 0;
+}
+.start__screen {
+  background: url(../img/main-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding-top: 270px;
+  padding-bottom: 138px;
+  margin-bottom: 132px;
+}
+.start__screen .main-title {
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 111px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.start__screen .slogan {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+
+  text-align: center;
+  color: #fff;
+
+  max-width: 485px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 59px;
+}
+.start__screen .btn {
+  background: #ff7129;
+  box-shadow: 0px 4px 28px 0px #ff71294a;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+
+  display: block;
+  width: 188px;
+  margin: 0 auto 106px;
+  padding: 16px 40px;
+}
+.start__screen .btn-scroll {
+  display: block;
+  background: rgba(123, 126, 133, 0.4);
+  width: 46px;
+  height: 46px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+/* Main */
+.main {
+  background-image: url(../img/main-info-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #20242d;
+  margin-bottom: 61px;
+}
+.main__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 115px;
+}
+.main__info {
+  flex-basis: 535px;
+  margin-left: 65px;
+}
+.main__info-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.main__info .main__info-text {
+  flex-basis: 535px;
+}
+.footer {
+  background-color: #20242d;
+}
+.footer .wrapper-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 58px;
+  margin-bottom: 77px;
+}
+.footer .navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .navigation li {
+  margin-right: 56px;
+}
+.footer .navigation li:last-child {
+  margin-right: 0;
+}
+.footer .navigation a {
+  font-weight: 600;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+.footer .navigation .active {
+  color: #ff7129;
+}
+.footer .btn {
+  background-color: #20242d;
+
+  font-family: "Gilroy";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  color: #fff;
+  padding: 16px 63px;
+  border: 1px solid #ff7129;
+}
+.footer .wrapper-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper-bottom a {
+  font-family: "Gilroy";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  color: #7b7e85;
+}
+/*-----------------------------*/
+/* About.html */
+
+.start__screen-about {
+  background: url(../img/about-title-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding-top: 200px;
+  padding-left: 217px;
+  padding-bottom: 103px;
+  margin-bottom: 80px;
+}
+.start__screen-about .main-title {
+  font-family: "Gilroy";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #fff;
+}
+.about {
+  background: url(../img/about-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding-left: 200px;
+  margin-bottom: 184px;
+}
+.about__info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.about__info-items {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.about__info-items .main__info-text {
+  max-width: 534px;
+}
+.about__info-items .main__info-text:first-child {
+  margin-bottom: 40px;
+}
