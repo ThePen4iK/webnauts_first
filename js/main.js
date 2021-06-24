@@ -1,4 +1,9 @@
-new Swiper('.projecty__slider', {
+new Swiper('.projecty__slider', {    
+    slidesPerView: 3,
+    spaceBetween: 161, 
+    centeredSlides: true,
+    loop: true,
+    
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -8,3 +13,5 @@ new Swiper('.projecty__slider', {
         type: 'fraction'   
     },
 });
+
+

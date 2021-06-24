@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -73,6 +73,8 @@
     <main>
       <section class="start__screen">
         <div class="container">
+          <span class="decor-word decor-word--1">Solar</span>
+          <span class="decor-word decor-word--2">Energy</span>
           <h1 class="main-title">Panele Fotowoltaiczne</h1>
           <p class="slogan">
             Kompleksowe usługi w zakresie montażu i podłączenia paneli
@@ -99,6 +101,9 @@
 
       <section class="main">
         <div class="container">
+          <span class="decor-line decor-line--1"></span>
+          <span class="decor-line decor-line--2"></span>
+          <span class="decor-line decor-line--3"></span>
           <div class="main__wrapper">
             <div class="main__img">
               <img
@@ -109,7 +114,8 @@
               />
             </div>
             <div class="main__info">
-              <h2 class="title">Ty i twói dom</h2>
+              <span class="decor-word decor-word--3">Info</span>
+              <h2 class="title title__stick">Ty i twói dom</h2>
               <p class="main__info-text">
                 Zrównoważony rozwój zaczyna się w domu od Ciebie i Twojej
                 rodziny. Codzienne dokonywane przez ciebie wybory - zarówno
@@ -149,6 +155,76 @@
         <div class="wrapper-bottom">
           <a href="#">Polityka prywatności</a>
           <a href="#">Ochrona danych osobowych </a>
+        </div>
+      </div>
+      <!-- popup  -->
+
+      <div class="popup display-none">
+        <div class="popup__container">
+          <button class="popup__close">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z"
+                fill="#20242D"
+              />
+            </svg>
+          </button>
+          <div class="popup__header">
+            <div class="popup__header-top">
+              <p class="popup__text">Przybliżony koszt:</p>
+              <h4 class="popup__title-price">40 000 zł</h4>
+            </div>
+            <div class="popup__header-bottom">
+              <button type="submit" class="btn popup__btn-white">
+                Przeliczyć
+              </button>
+            </div>
+          </div>
+          <div class="popup__form">
+            <p class="popup__title">Jakieś pytania?</p>
+            <p class="popup__description">
+              Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby
+              odpowiedzieć na Twoje pytania
+            </p>
+            <form method="GET" action="#">
+              <label>
+                Twoje imię
+                <input
+                  type="text"
+                  name="user"
+                  placeholder="Wprowadź swoje imię"
+                  id="name"
+                />
+              </label>
+              <label>
+                E-mail
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Wprowadź mail"
+                  id="email"
+                />
+              </label>
+              <label>
+                Telefon
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Wprowadź telefon"
+                  id="tel"
+                />
+              </label>
+              <button type="submit" class="btn popup__btn">
+                Wysłać prośbę
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
