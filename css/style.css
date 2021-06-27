@@ -32,6 +32,7 @@ button {
 }
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -177,77 +178,85 @@ img {
   background-color: #3b4e7c;
   opacity: 0.15;
   width: 1px;
-  height: 852px;
+  height: 100%;
 }
-.decor-line--1 {
+.decor-line--left {
   position: absolute;
-  top: -132px;
-  left: 149px;
+  top: -25%;
+  left: 10%;
+  height: 200%;
 }
-.decor-line--2 {
+.decor-line--center {
   position: absolute;
-  top: -132px;
-  left: 750px;
+  top: -25%;
+  left: 50%;
+  height: 200%;
 }
-.decor-line--3 {
+.decor-line--right {
   position: absolute;
-  top: -132px;
-  right: 149px;
+  top: -25%;
+  right: 10%;
+  height: 200%;
 }
-.decor-line--4 {
+.about .decor-line--left {
   position: absolute;
-  top: -81px;
-  left: 742px;
-  height: 468px;
+  top: 0;
+  left: 15%;
 }
-.decor-line--5 {
+.about .decor-line--center {
   position: absolute;
-  top: -347px;
-  left: 149px;
-  height: 836px;
+  top: 0;
+  left: 55.8%;
 }
-.decor-line--6 {
+.about .decor-line--right {
   position: absolute;
-  top: -347px;
-  left: 750px;
-  height: 836px;
+  top: 0;
+  right: 13%;
 }
-.decor-line--7 {
+.kontakt__main-page .decor-line--left {
   position: absolute;
-  top: -347px;
-  right: 149px;
-  height: 836px;
+  top: 0;
+  left: 15.9%;
 }
-.decor-line--8 {
+.kontakt__main-page .decor-line--center {
   position: absolute;
-  top: -120px;
-  left: 200px;
-  height: 3600px;
+  top: 0;
+  left: 52.6%;
 }
-.decor-line--9 {
+.kontakt__main-page .decor-line--right {
   position: absolute;
-  top: -120px;
-  left: 800px;
-  height: 3582px;
+  top: 0;
+  right: 14%;
 }
-.decor-line--10 {
+.instalacja .decor-line--left {
   position: absolute;
-  top: -120px;
-  right: 199px;
-  height: 3600px;
+  top: 0;
+  left: 15%;
+  height: 80%;
 }
-
-.decor-word--1 {
+.instalacja .decor-line--center {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 80%;
+}
+.instalacja .decor-line--right {
+  position: absolute;
+  top: 0;
+  right: 15.6%;
+  height: 80%;
+}
+.decor-word--solar {
   position: absolute;
   top: 167px;
   left: 50px;
 }
-.decor-word--2 {
+.decor-word--energy {
   position: absolute;
   right: 50px;
   bottom: 282px;
 }
-.decor-word--3 {
+.decor-word--info {
   position: absolute;
   -webkit-text-stroke: 1px rgba(32, 36, 45, 0.1);
   font-size: 96px;
@@ -255,7 +264,7 @@ img {
   top: 5px;
   left: -28px;
 }
-.decor-word--4 {
+.decor-word--about {
   position: absolute;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   font-size: 96px;
@@ -263,7 +272,7 @@ img {
   top: -68px;
   left: 22px;
 }
-.decor-word--5 {
+.decor-word--contacts {
   position: absolute;
   -webkit-text-stroke: 1px rgba(32, 36, 45, 0.1);
   font-size: 96px;
@@ -271,14 +280,14 @@ img {
   left: 25px;
   bottom: 2px;
 }
-.decor-word--6 {
+.decor-word--fotonTech {
   position: absolute;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   font-size: 96px;
   line-height: 116px;
   left: 0px;
 }
-.decor-word--7 {
+.decor-word--instalacja {
   position: absolute;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   font-size: 96px;
@@ -350,10 +359,9 @@ img {
 
   padding-top: 132px;
   padding-bottom: 115px;
+  overflow: hidden;
 }
-.main .container {
-  position: relative;
-}
+
 .main .title {
   margin-top: 0;
   margin-bottom: 64px;
@@ -383,6 +391,8 @@ img {
 .main__wrapper {
   display: flex;
   justify-content: center;
+
+  position: relative;
 }
 .main__img {
   margin-right: 65px;
@@ -476,7 +486,6 @@ img {
   padding-top: 200px;
   padding-left: 217px;
   padding-bottom: 103px;
-  margin-bottom: 80px;
 }
 .start__screen-about .container {
   position: relative;
@@ -501,10 +510,11 @@ img {
 
   padding-left: 200px;
   padding-bottom: 184px;
-}
-.about .container {
+  padding-top: 80px;
   position: relative;
+  overflow: hidden;
 }
+
 .display-none {
   display: none;
 }
@@ -519,7 +529,7 @@ img {
   flex: 1;
 }
 .about__info-items .main__info-text {
-  max-width: 534px;
+  max-width: 528px;
 }
 .about__info-items .main__info-text:first-child {
   margin-bottom: 40px;
@@ -621,9 +631,7 @@ img {
   padding-left: 217px;
   padding-bottom: 175px;
 }
-.kontakt .container {
-  position: relative;
-}
+
 .start__screen-kontakt .container {
   position: relative;
 }
@@ -637,6 +645,13 @@ img {
   text-align: left;
   padding-left: 16px;
 }
+.kontakt__main-page {
+  position: relative;
+  overflow: hidden;
+}
+.kontakt {
+  position: relative;
+}
 .kontakt .container {
   padding-left: 201px;
   padding-bottom: 174px;
@@ -644,13 +659,14 @@ img {
 .kontakt__wrapper {
   display: flex;
   flex-direction: column;
-  position: relative;
+
+  padding-left: 25px;
 }
 .kontakt__img {
   position: absolute;
+  right: 0;
   bottom: 0;
-  right: -70px;
-  top: -58px;
+  z-index: 1;
 }
 .kontakt__title {
   font-family: "Gilroy";
@@ -713,7 +729,9 @@ img {
   align-items: center;
 }
 .instalacja {
+  position: relative;
   padding-top: 120px;
+  overflow: hidden;
 }
 .instalacja__wrapper {
   max-width: 700px;
@@ -867,12 +885,34 @@ img {
 /*------------------------------------------*/
 /* Popup */
 .popup {
-  position: fixed;
+  display: none;
+  /* position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
+/* .popup__agree {
+  display: none;
+  padding-bottom: 97px;
+} */
+/* @keyframes hidePopUp {
+  0% {
+    transform: translate(-50px, -2000px);
+  }
+  50% {
+    transform: translate(-50%, 0%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+.popup-show {
+  display: block;
+  animation-name: hidePopUp;
+  animation-duration: 1s;
+} */
 .popup__container {
+  position: relative;
   width: 800px;
   background-color: #fff;
 }
@@ -991,4 +1031,46 @@ img {
 .popup__btn-white {
   color: #ff7129;
   background-color: #fff;
+}
+.popup__agree .popup__container {
+  background-color: #ff7129;
+}
+.popup__agree-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 92px;
+}
+.popup__agree-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #fff;
+  padding-bottom: 72px;
+}
+.popup__agree-icon {
+  align-items: center;
+  margin-bottom: 41px;
+}
+.popup__agree-text {
+  font-family: "Gilroy";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 24px;
+}
+.popup__agree-dscr {
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 56px;
 }
