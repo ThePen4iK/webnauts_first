@@ -1,31 +1,29 @@
-// new Swiper('.projecty__slider', {    
-//     slidesPerView: 3,
-//     spaceBetween: 161, 
-//     centeredSlides: true,
-//     loop: true,
-    
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//       },
-//     pagination: {
-//         el: '.swiper-pagination',   
-//         type: 'fraction'   
-//     },
-// });
+let popUp = document.querySelector(".popup");
+let popUpAgree = document.querySelector(".popup__agree");
 
-let popUp = document.querySelector('.popup');
-let btn = document.querySelector('.btn-popup');
-let popUpClose = document.querySelector('.popup__close')
+let btn = document.querySelector(".btn-popup");
+let popUpClose = document.querySelector('.popup__close');
+
+let popUpCloseDark = document.querySelector('.close-dark');
 let footerBtn = document.querySelector('.btn-dark');
 
-function showPopUpOnClick(){
-    popUp.classList.add('popup-show');
+function showPopUpOnClick() {
+   popUp.classList.add('popup-show');  
+};
+function showPopUpDarkOnClick() {
+    popUpAgree.classList.add('popup-show');  
+ };
+function closePopUpOnClick(){
+    popUp.classList.remove('popup-show');  
+}
+function closePopUpDarkOnClick(){ 
+    popUpAgree.classList.remove('popup-show');
+
 }
 
-btn.addEventListener('click', showPopUpOnClick);
+btn.addEventListener("click", showPopUpOnClick);
+footerBtn.addEventListener("click", showPopUpDarkOnClick);
 
-footerBtn.addEventListener('click', showPopUpOnClick);
-popUpClose.addEventListener('click', ()=>{
-    popUp.classList.remove('popup-show');
-});
+
+popUpClose.addEventListener('click', closePopUpOnClick);
+popUpCloseDark.addEventListener('click', closePopUpDarkOnClick);

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -129,6 +129,117 @@
         <div class="wrapper-bottom">
           <a href="#">Polityka prywatności</a>
           <a href="#">Ochrona danych osobowych </a>
+        </div>
+      </div>
+    
+      <div class="popup">
+        <div class="popup__container">
+          <button class="popup__close">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z"
+                fill="#20242D"
+              />
+            </svg>
+          </button>
+          <div class="popup__header">
+            <div class="popup__header-top">
+              <p class="popup__text">Przybliżony koszt:</p>
+              <p class="popup__title-price">40 000 zł</p>
+            </div>
+            <div class="popup__header-bottom">
+              <button type="submit" class="btn popup__btn-white">
+                Przeliczyć
+              </button>
+            </div>
+          </div>
+          <div class="popup__form">
+            <p class="popup__title">Jakieś pytania?</p>
+            <p class="popup__description">
+              Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby
+              odpowiedzieć na Twoje pytania
+            </p>
+            <form method="GET" action="#">
+              <label>
+                Twoje imię
+                <input
+                  type="text"
+                  name="user"
+                  placeholder="Wprowadź swoje imię"
+                  id="name"
+                />
+              </label>
+              <label>
+                E-mail
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Wprowadź mail"
+                  id="email"
+                />
+              </label>
+              <label>
+                Telefon
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Wprowadź telefon"
+                  id="tel"
+                />
+              </label>
+              <button type="submit" class="btn popup__btn">
+                Wysłać prośbę
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__agree">
+        <div class="popup__container">
+          <button class="popup__close close-dark">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z"
+                fill="#fff"
+              />
+            </svg>
+          </button>
+          <div class="popup__agree-wrapper">
+            <div class="popup__agree-icon">
+              <svg
+                width="81"
+                height="58"
+                viewBox="0 0 81 58"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30.5 44.0669L74.162 0.400146L80.8832 7.11665L30.5 57.4999L0.270996 27.2709L6.9875 20.5544L30.5 44.0669Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="popup__agree-title">
+              <p class="popup__agree-text">Dziękuję za twoją prośbę</p>
+              <p class="popup__agree-dscr">
+                Nasz menedżer wkrótce się z Tobą skontaktuje
+              </p>
+              <button type="submit" class="btn popup__btn-white">Ok</button>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
