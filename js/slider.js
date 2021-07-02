@@ -1,6 +1,5 @@
-new Swiper('.projecty__slider', {    
-    slidesPerView: 3,
-    spaceBetween: 161, 
+new Swiper('.projecty__slider', {  
+    slidesPerView: 1.2,
     centeredSlides: true,
     loop: true,
     
