@@ -158,6 +158,8 @@ img {
 
   padding-top: 270px;
   padding-bottom: 138px;
+
+  position: relative;
 }
 .start__screen .container {
   position: relative;
@@ -377,6 +379,61 @@ img {
   margin: 0 auto;
   border-radius: 50%;
   cursor: pointer;
+}
+.wrapper__btn-scroll {
+  position: absolute;
+  left: 49%;
+}
+.btn-scroll {
+  width: 46px;
+  height: 46px;
+
+  position: relative;
+
+  background: rgba(123, 126, 133, 0.5) 50%;
+
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn-scroll::before,
+.btn-scroll::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.btn-scroll::before {
+  width: 16px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 30%;
+}
+.btn-scroll::after {
+  background-color: #fff;
+  width: 2px;
+  height: 5px;
+  position: absolute;
+  top: -20%;
+  animation: btn-scroll 1s ease-in-out infinite;
+}
+@keyframes btn-scroll {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 25%;
+  }
 }
 /* Main */
 .main {
