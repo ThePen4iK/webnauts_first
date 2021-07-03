@@ -8,20 +8,22 @@ let popUpCloseDark = document.querySelector('.close-dark');
 let footerBtn = document.querySelector('.btn-dark');
 
 function showPopUpOnClick() {
-   popUp.classList.add('popup-show');  
+    popUp.classList.add('popup-show');
 };
 function showPopUpDarkOnClick() {
-    popUpAgree.classList.add('popup-show');  
- };
-function closePopUpOnClick(){
-    popUp.classList.remove('popup-show');  
+    popUpAgree.classList.add('popup-show');
+};
+function closePopUpOnClick() {
+    popUp.classList.remove('popup-show');
 }
-function closePopUpDarkOnClick(){ 
+function closePopUpDarkOnClick() {
     popUpAgree.classList.remove('popup-show');
 
 }
+if (btn) {
+    btn.addEventListener("click", showPopUpOnClick);
+}
 
-btn.addEventListener("click", showPopUpOnClick);
 footerBtn.addEventListener("click", showPopUpDarkOnClick);
 
 
